@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="jquery.js"></script>
+	<script src="game.js"></script>
+	<script type='text/javascript'>
+	window.onload = function() {
+		startGame();
+		/*$('table td').on('click', function() {
+			console.log($(this).attr('data-pos'));
+		});*/
+	}
+	</script>
+	<title>Threes-Like!</title>
+	</head>
+	<body onkeydown='keyEvent(event, "preview")' onkeyup='keyEvent(event, "commit")'>
+		<div id="wrapper">
+			<div class='gameboard'>
+				<input class='newgame'type='button' value='New Game' onclick='newGame()'> <br>
+				<p id='next-number'></p>
+				<p id='number'></p>
+				<p id='scoreLabel'>Score:</p>
+				<p id='score'></p>
+				<hr>
+				<table>
+					<tr class='row1'><td data-pos='0'></td><td data-pos='1'></td><td data-pos='2'></td><td data-pos='3'></td></tr>
+					<tr class='row2'><td data-pos='4'></td><td data-pos='5'></td><td data-pos='6'></td><td data-pos='7'></td></tr>
+					<tr class='row3'><td data-pos='8'></td><td data-pos='9'></td><td data-pos='10'></td><td data-pos='11'></td></tr>
+					<tr class='row4'><td data-pos='12'></td><td data-pos='13'></td><td data-pos='14'></td><td data-pos='15'></td></tr>
+				</table>
+				<p style='margin-top: 10px; text-align: center; color: white'>Press and release arrow to commit a move.</p>
+				<p style='text-align: center; color: white'>Hold an arrow to preview. Press space bar to cancel.</p>
+			</div> <!--gameboard-->
+			
+			<div id="push"></div> <!--close push-->
+		</div> <!--close wrapper-->
+		<footer>
+		</footer> <!--close footer-->
+	</body>
+</html>
+

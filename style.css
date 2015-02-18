@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #000;
+}
+.gameboard .newgame { width: 10%; display: block; margin: 0 auto; margin-bottom: 10px;}
+.gameboard #next-number { width: 10px; display: inline; text-align: center; margin-left: 400px; color: white; font-size: 20px;} 
+.gameboard #number { display: inline; width: 500px; margin-left: 50px; margin-bottom: 20px;} 
+.gameboard #scoreLabel {width: 100px; display: inline; text-align: center; margin-left: 100px; color: white; font-size: 20px;} 
+.gameboard #score { display: inline; width: 100px; height: 100px; margin-left: 50px; margin-bottom: 20px; font-size: 20px; color: white;} 
+.gameboard { margin-top: 1%; }
+.gameboard table { margin: 0 auto; width: 40%; }
+.gameboard table tr td { width: 20%; text-align: center; color: white; font-size: 400%; }
+.gameboard table td:nth-child(1), .gameboard table td:nth-child(2), .gameboard table td:nth-child(3), .gameboard table td:nth-child(4) { border-right: 4px solid white; border-top: 4px solid white;}
+.gameboard table tr:nth-child(1) td, .gameboard table tr:nth-child(2) td, .gameboard table tr:nth-child(3) td, .gameboard table tr:nth-child(4) td { border-bottom: 4px solid white; border-left: 4px solid white; }
+
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -100px; /* Negative indent footer by it's height */
+}
+/*
+#push {
+	height: 100px;
+}
+
+footer {
+ height: 100px;
+ position: relative;
+/*position: absolute; bottom: 0; to make it stay in view on the bottom during scrolling *//*
+ width: 100%;
+ bottom: 0;
+ }*/
